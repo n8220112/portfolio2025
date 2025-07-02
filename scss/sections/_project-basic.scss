@@ -1,0 +1,110 @@
+.project-basic {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  > div {
+    @include border;
+    padding: 50px;
+    height: 100%;
+  }
+  @at-root .project-index {
+    width: fit-content;
+    height: fit-content;
+    font-size: $font-h3;
+    font-family: $primary-en;
+    font-weight: 400;
+    line-height: 50%;
+    padding-bottom: 15px;
+    @include border-bottom;
+    user-select: none;
+    &.number {
+      border-bottom: none;
+      justify-self: end;
+    }
+  }
+  .project-info {
+    display: grid;
+    justify-content: space-between;
+    align-items: start;
+    grid-template-columns: 1fr auto;
+    h4 {
+      grid-column: 1/3;
+    }
+    .title {
+      grid-column: 1/2;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h2 {
+        font-size: $font-heading-large;
+        font-weight: 700;
+        line-height: 100%;
+        @include border;
+        width: fit-content;
+        height: fit-content;
+        padding: 0 5px;
+      }
+    }
+    .info {
+      width: fit-content;
+      height: 100%;
+      align-self: end;
+      grid-column: 2/3;
+      font-size: $font-xl;
+      @at-root .project-links {
+        font-size: $font-l;
+        display: flex;
+        gap: 5px;
+        margin-bottom: 20px;
+        a {
+          width: fit-content;
+          height: fit-content;
+          background-color: var(--middle-color);
+          @include hover;
+          padding: 5px;
+          font-family: $primary-en;
+          i {
+            margin-right: 5px;
+          }
+          span {
+            text-decoration: underline;
+          }
+        }
+      }
+      p {
+        line-height: 150%;
+        font-family: $secondary-kr;
+      }
+    }
+    .swiper {
+      grid-column: 1/3;
+      grid-row: 3/4;
+      width: 100%;
+      height: 450px;
+    }
+    .desc {
+      grid-column: 1/3;
+      grid-row: 4/5;
+      align-self: end;
+      font-size: $font-l;
+      line-height: 125%;
+    }
+  }
+  .project-side {
+    display: grid;
+    //grid-template-rows: auto 1fr;
+    grid-template-rows: auto 740px;
+    text-align: right;
+    justify-content: start;
+    .project-index {
+      width: unset;
+      font-size: $font-xl;
+      text-transform: uppercase;
+    }
+    .swiper {
+      align-self: end;
+      width: 416px;
+      height: 740px;
+    }
+  }
+}

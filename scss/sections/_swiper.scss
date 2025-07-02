@@ -1,0 +1,28 @@
+.swiper {
+  @include border;
+}
+
+.swiper-slide{
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.swiper-pagination-bullet {
+  transition: 0.3s;
+  opacity: 0.8;
+  background: var(--hover-color);
+}
+.swiper-pagination-bullet-active {
+  opacity: 0.8;
+  background: var(--main-color);
+  width: 20px;
+  border-radius: 10px;
+}
