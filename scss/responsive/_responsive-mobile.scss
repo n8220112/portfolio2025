@@ -169,6 +169,7 @@
       }
       .intro-visual {
         padding: 10px;
+        background-attachment: scroll;
         span.br {
           display: none;
         }
@@ -399,6 +400,7 @@
   .epilogue {
     height: max-content;
     padding-bottom: 200px;
+    background-attachment: scroll;
     &::before,
     &::after {
       bottom: 0;

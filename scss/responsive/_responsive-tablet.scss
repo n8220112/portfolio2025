@@ -125,6 +125,7 @@
       }
       .intro-visual {
         padding: 30px;
+        background-attachment: scroll;
         .catchphrase {
           font-size: $font-heading-medium;
         }
@@ -339,6 +340,7 @@
   .epilogue {
     height: max-content;
     padding-bottom: 200px;
+    background-attachment: scroll;
     &::before,
     &::after {
       font-size: 150px;
