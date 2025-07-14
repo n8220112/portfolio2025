@@ -1,0 +1,79 @@
+.main-menu-wrap {
+  .main-menu {
+    width: 400px;
+    @include menu-position;
+    user-select: none;
+    font-family: $primary-en;
+    .menu-profile {
+      @include border;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      gap: 20px;
+      max-height: 60%;
+      min-height: 540px;
+      .menu-today {
+        position: relative;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        gap: 10px;
+        .month {
+          font-size: $font-heading-medium;
+          line-height: 100%;
+        }
+        p {
+          font-size: $font-h5;
+          font-family: $primary-kr;
+        }
+        .date {
+          position: absolute;
+          font-size: 150px;
+          bottom: 0;
+          right: 0;
+          text-align: right;
+          line-height: 100px;
+          letter-spacing: -5px;
+        }
+      }
+      .menu-profile-pic {
+        @include border;
+        width: 100%;
+        width: 360px;
+        height: 360px;
+        background-image: var(--menu-profile-pic);
+        background-size: cover;
+      }
+    }
+    .menu-list {
+      @include border;
+      padding: 20px;
+      text-transform: uppercase;
+      min-height: 40%;
+      height: calc(100vh - $header-heights - 540px);
+      display: flex;
+      justify-content: start;
+      gap: 10px;
+      flex-direction: column;
+      h6 {
+        font-weight: 400;
+      }
+      @at-root .chapters {
+        font-family: $primary-en;
+        text-transform: uppercase;
+        li {
+          border-top: 1px solid var(--main-color);
+          font-size: $font-heading-medium;
+          letter-spacing: -1px;
+          position: relative;
+          span {
+            font-size: $font-xl;
+            position: absolute;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}

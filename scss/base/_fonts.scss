@@ -1,0 +1,27 @@
+/* Fontawesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+
+/* Poppins: primary_en */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* SUIT: primary_kr */
+@font-face {
+   font-family: "SUIT-Regular";
+   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2") format("woff2");
+   font-weight: normal;
+   font-style: normal;
+}
+
+/* Noto Serif: secondary_en */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 조선굴림: secondary_kr */
+@font-face {
+   font-family: "ChosunGu";
+   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+}
+
+/* 갈무리11: point_kr */
+@import url("https://fastly.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css");

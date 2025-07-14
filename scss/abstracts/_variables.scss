@@ -1,0 +1,81 @@
+/* Fonts */
+$primary-en: "Poppins", sans-serif;
+$secondary-en: "Noto Serif", serif;
+$primary-kr: "SUIT Variable", sans-serif;
+$secondary-kr: "ChosunGu", sans-serif;
+$point-kr: "Galmuri11", sans-serif;
+
+/* Font Size */
+$font-heading-big: 7.143rem; // 100px
+$font-heading-large: 4.286rem; // 60px
+$font-heading-medium: 3.143rem; // 44px
+$font-heading-small: 2.714rem; // 38px
+$font-h3: 2.286rem; // 32px
+$font-h4: 1.857rem; // 26px
+$font-h5: 1.429rem; // 20px
+$font-xl: 1.286rem; // 18px
+$font-l: 1.143rem; // 16px
+$font-m: 1rem; // 14px
+$font-s: 0.857rem; // 12px
+$font-xs: 0.714rem; // 10px
+
+/* day colorset */
+:root {
+  --main-color: #000;
+  --base-color: #fff;
+  --middle-color: #eee;
+  --hover-color: #ddd;
+  --white: #fff;
+  --black: #000;
+  --variable-color: #000;
+  --ball-color-1: #bdd9a9;
+  --ball-color-2: #d5eabb;
+  --ball-color-3: #e8f2d8;
+  --ball-color-4: #e7f2bd;
+  --ball-color-5: #aed8c2;
+  --main-img: url("../images/day-main-visual.png");
+  --menu-profile-pic: url("../images/day-menu-profile.png");
+  --epilogue-img: url("../images/day-epilogue-background.png");
+}
+
+/* monet colorset */
+[data-theme="monet"] {
+  --main-color: #ff0051;
+  --base-color: #fff;
+  --middle-color: #eee;
+  --hover-color: #ddd;
+  --white: #fff;
+  --black: #000;
+  --variable-color: transparent;
+  --ball-color-1: #e5dff2;
+  --ball-color-2: #e2c8e2;
+  --ball-color-3: #e0e9e8;
+  --ball-color-4: #f1f0f2;
+  --ball-color-5: #c6c4f2;
+  --main-img: url("../images/monet-main-visual.png");
+  --menu-profile-pic: url("../images/monet-menu-profile.png");
+  --epilogue-img: url("../images/monet-epilogue-background.png");
+}
+
+/* night colorset */
+[data-theme="night"] {
+  --main-color: #fafafa;
+  --base-color: #171b1f;
+  --middle-color: #262c33;
+  --hover-color: #384959;
+  --white: #000;
+  --black: #fff;
+  --variable-color: transparent;
+  --ball-color-1: #2f6c73;
+  --ball-color-2: #1e541c;
+  --ball-color-3: #84524c;
+  --ball-color-4: #5a7302;
+  --ball-color-5: #4b8a91;
+  --main-img: url("../images/night-main-visual.png");
+  --menu-profile-pic: url("../images/night-menu-profile.png");
+  --epilogue-img: url("../images/night-epilogue-background.png");
+}
+
+/* headerheights */
+$header-heights: 50px; 
+$res-header-heights: 30px;

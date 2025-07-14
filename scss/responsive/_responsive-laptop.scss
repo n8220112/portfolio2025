@@ -1,0 +1,116 @@
+@media screen and (min-width: 1281px) and (max-width: 1600px) {
+  /* 랩탑 */
+  /* header */
+  .header {
+    .header-logo {
+      gap: 10px;
+      @at-root .dots {
+        font-size: 6px;
+      }
+      a {
+        font-size: $font-xl;
+        em {
+          padding-top: 0px;
+        }
+        span {
+          font-size: $font-h5;
+        }
+      }
+    }
+    .header-slide {
+      width: 70%;
+    }
+  }
+  /* main */
+  .main-wrap {
+    @include menuToggleWrap(auto 0 0, auto 400px 0, 0px);
+    .main-section-wrap {
+      section {
+        max-height: calc(100vh - $header-heights);
+        height: 900px;
+        min-height: 900px;
+      }
+    }
+  }
+  .main-menu-wrap {
+    .main-menu {
+      width: 100%;
+      overflow: scroll;
+      .menu-profile {
+        min-height: 520px;
+        .menu-today {
+          .date {
+            font-size: 120px;
+          }
+        }
+      }
+      .menu-list {
+        padding: 10px 20px;
+        height: max-content;
+        @at-root .chapters {
+          li {
+            font-size: $font-heading-medium;
+            span {
+              font-size: $font-xl;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* project */
+  .project-wrap {
+    @include menuToggleWrap(0 0 auto, 0 300px auto, 0px);
+    .project-section-wrap {
+      .project-section-inner {
+        > article {
+          max-height: calc(100vh - $header-heights);
+          height: 900px;
+          min-height: 900px;
+        }
+      }
+    }
+  }
+  /* project-basic */
+  .project-basic {
+    > div {
+      padding: 30px;
+    }
+    .project-info {
+      gap:20px;
+      .info-wrap {
+        .info {
+          font-size: $font-l;
+          @at-root .project-links {
+            font-size: $font-m;
+          }
+        }
+      }
+      .desc {
+        font-size: $font-m;
+      }
+      .swiper-wrap {
+        max-width: 900px;
+      }
+    }
+    .project-side {
+      .swiper-wrap {
+        max-width: 350px;
+      }
+    }
+  }
+  /* project-sub */
+  .project-sub {
+    width: calc(50vw) !important;
+    padding: 30px;
+    .swiper {
+      height: 450px;
+    }
+    .title {
+      grid-column: 1/3;
+    }
+    .desc {
+      font-size: $font-m;
+    }
+  }
+}

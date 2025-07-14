@@ -1,0 +1,34 @@
+.main-wrap {
+  margin-top: $header-heights;
+  width: 100%;
+  height: max-content;
+  @include menuToggleWrap(auto 400px 0, auto 400px 0, 400px);
+  .main-section-wrap {
+    section {
+      height: calc(100vh - $header-heights);
+    }
+  }
+  .project-menu{
+    display: none;
+  }
+  .main-hiddencontent {
+    @include menu-position;
+    background-color: var(--main-color);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    > * {
+      padding: 10px 0;
+      i {
+        font-size: $font-h5;
+        color: var(--base-color);
+      }
+    }
+    .playlist {
+      margin-top: auto;
+    }
+  }
+}

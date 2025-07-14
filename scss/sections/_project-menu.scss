@@ -1,0 +1,69 @@
+.project-menu {
+  @include border;
+  @include menu-position;
+  overflow-y:scroll;
+  user-select: none;
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 40px;
+  h5 {
+    font-size: $font-h5;
+    text-transform: uppercase;
+  }
+  .project-list {
+    li {
+      @include border-bottom;
+      &:first-child {
+        border-top: 1px solid var(--main-color);
+      }
+      a {
+        display: grid;
+        grid-template-columns: auto 1fr 60px;
+        column-gap: 10px;
+        grid-template-rows: 3fr 2fr;
+        justify-content: space-between;
+        align-content: space-between;
+        padding: 20px 0;
+        position: relative;
+        @include hover;
+        .icon {
+          grid-row: 1/3;
+          font-size: 25px;
+          width: 25px;
+          height: 25px;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        i {
+          grid-column: 2/3;
+          grid-row: 1/2;
+          font-family: $secondary-kr;
+          line-height: 120%;
+          text-transform: uppercase;
+        }
+        em {
+          width: fit-content;
+          height: fit-content;
+          grid-column: 2/3;
+          grid-row: 2/3;
+          font-size: $font-xl;
+          font-weight: 700;
+          @include border-bottom;
+        }
+        .thumb {
+          align-self: end;
+          grid-column: 3/4;
+          grid-row: 1/3;
+          @include border;
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
+}
+#project-list li a.active {
+  @include backgroundAfter(var(--main-color), 0.1);
+}

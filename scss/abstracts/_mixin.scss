@@ -1,0 +1,51 @@
+@mixin border {
+  border: 1px solid var(--main-color);
+}
+
+@mixin border-bottom {
+  border-bottom: 1px solid var(--main-color);
+}
+
+@mixin hover {
+  transition: 0.15s;
+  &:hover {
+    background-color: var(--ball-color-5);
+  }
+}
+
+@mixin backgroundAfter($color, $opacity) {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: $opacity;
+    background-color: $color;
+  }
+}
+
+@mixin menu-position {
+  height: calc(100vh - $header-heights);
+  position: sticky;
+  top: $header-heights;
+}
+
+@mixin menuToggleWrap($templateColumns, $ActiveTemplateColumns, $innerWidth) {
+  display: grid;
+  grid-template-columns: $templateColumns;
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+  &.menuActive {
+    grid-template-columns: $ActiveTemplateColumns;
+  }
+  .menuToggleInner {
+    overflow: hidden;
+    > * {
+      width: calc(100vw - $innerWidth);
+    }
+  }
+}

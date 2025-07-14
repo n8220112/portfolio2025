@@ -1,0 +1,42 @@
+.project-wrap {
+  @include menuToggleWrap(0 300px auto, 400px 300px auto, 300px);
+  > * {
+    background-color: var(--base-color);
+  }
+  .project-section-wrap {
+    z-index: 1;
+    position: relative;
+    .project-slide {
+      @include border;
+      user-select: none;
+      height: 80px;
+      gap: 10px;
+      overflow: hidden;
+      position: relative;
+      .slider-track {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        white-space: nowrap;
+        span {
+          font-family: $primary-en;
+          font-size: $font-heading-small;
+          text-transform: uppercase;
+          white-space: nowrap;
+        }
+      }
+    }
+    .project-section-inner {
+      display: flex;
+      flex-wrap: wrap;
+      > article {
+        min-height: calc(100vh - $header-heights);
+        max-height: fit-content;
+      }
+    }
+  }
+}
