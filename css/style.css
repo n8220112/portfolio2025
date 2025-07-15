@@ -676,7 +676,7 @@ h6 {
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 .main-section-wrap .about .skills > div:not(.article-title) ul li img {
   height: 40px;
